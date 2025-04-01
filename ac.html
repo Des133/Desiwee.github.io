@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="URF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Who's Des?</title>
+        <link rel="icon" type="png" href="pixel.png">
+        <link rel="stylesheet" href="ab.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+        rel='stylesheet'>
+
+        <style>
+    
+            .sticker {
+                position: absolute;
+                width: 100px; /* Adjust size as needed */
+                height: auto;
+                pointer-events: none; /* Make stickers non-interactive */
+                animation: floatSticker 5s ease-in-out infinite alternate;
+            }
+    
+            .s5 {
+                top: 10%;
+                left: 10%;
+                transform: rotate(15deg);
+            }
+    
+            .s2 {
+                top: 30%;
+                right: 15%;
+                transform: rotate(-10deg);
+            }
+    
+            .s6 {
+                bottom: 20%;
+                left: 20%;
+                transform: rotate(-5deg);
+            }
+    
+            .s7 {
+                bottom: 5%;
+                right: 10%;
+                transform: rotate(20deg);
+            }
+    
+            @keyframes floatSticker {
+                0% { transform: translateY(0) rotate(0); }
+                100% { transform: translateY(-10px) rotate(5deg); }
+            }
+        </style>
+    </head>
+    <body>
+
+        <header class="upper">
+            <a href="#home" class="logo">DES</a>
+            <nav class="navbar">
+                <a href="a.html">Home</a>
+                <a href="ac.html" class="active">About</a>
+                <a href="ab.html">Favorites</a>
+                <a href="ad.html">Contact</a>
+            </nav>
+        </header>
+    
+        <div class="about-container">
+            <div class="about-header">
+                <h2>About Me</h2>
+                <p>Get to know Des</p>
+            </div>
+    
+            <div class="section-container" id="childhood">
+                <h3>Childhood</h3>
+                <img src="f.png" class="child-pic" alt="Childhood Image">
+                <p>
+                    I grew up in Antipolo but we moved to Pililla when I turned 7.
+                    I like to play outside that's why I have lots of scar marks on my legs.
+                    I love watching disney movies, I used to collect dvds to watch those princess movies.
+                </p>
+            </div>
+    
+            <div class="section-container" id="education">
+                <h3>Children's Garden School Antipolo</h3>
+                <img src="cgs.png" class="educ-pic" alt="Children's Garden School">
+                <p>Preparatory</p>
+    
+                <h3>San Isidro Labrador Academy</h3>
+                <img src="sila.png" class="educ-pic" alt="San Isidro Labrador Academy">
+                <p>Grade 1 - Grade 2</p>
+    
+                <h3>Pililla Elementary School Central</h3>
+                <img src="pecs.png" class="educ-pic" alt="Pililla Elementary School Central">
+                <p>Grade 3 - Grade 6</p>
+    
+                <h3>Pililla National High School</h3>
+                <img src="pnhs.png" class="educ-pic" alt="Pililla National High School">
+                <p>Junior High - Senior High</p>
+    
+                <h3>University of Rizal System</h3>
+                <img src="ursm.png" class="educ-pic" alt="University of Rizal System">
+                <p>Present</p>
+            </div>
+    
+            <div class="section-container" id="current">
+                <h3>Current happenings</h3>
+                <img src="trio.png" class="cur-pic" alt="Current Image 1">
+                <img src="oa.png" class="cur-pic" alt="Current Image 2">
+                <img src="us.png" class="cur-pic" alt="Current Image 3">
+                <img src="us2.png" class="cur-pic" alt="Current Image 4">
+                <p>
+                    Now, there are lots of hard times but it was bearable since I met a lot of people.
+                    People who make days more lighter and brighter.
+                    I also lose a lot of friends but it's part of the journey.
+                </p>
+            </div>
+            <img src="s5.png" alt="Sticker 1" class="sticker s5">
+            <img src="s2.png" alt="Sticker 2" class="sticker s2">
+            <img src="s6.png" alt="Sticker 3" class="sticker s6">
+            <img src="s7.png" alt="Sticker 4" class="sticker s7">
+        </div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const childhoodSection = document.getElementById("childhood");
+                const educationSection = document.getElementById("education");
+                const currentSection = document.getElementById("current");
+    
+                childhoodSection.addEventListener("click", function() {
+                    childhoodSection.classList.toggle("active");
+                });
+    
+                educationSection.addEventListener("click", function() {
+                    educationSection.classList.toggle("active");
+                });
+    
+                currentSection.addEventListener("click", function() {
+                    currentSection.classList.toggle("active");
+                });
+            });
+        </script>
+
+    </body>
+</html>

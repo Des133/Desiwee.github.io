@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="URF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Who's Des?</title>
+        <link rel="icon" type="png" href="pixel.png">
+        <link rel="stylesheet" href="ab.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+        rel='stylesheet'>
+    </head>
+    <body>
+
+        <header class="upper">
+            <a href="#home" class="logo">DES</a>
+            <nav class="navbar">
+                <a href="a.html" class="active">Home</a>
+                <a href="ac.html">About</a>
+                <a href="ab.html">Favorites</a>
+                <a href="ad.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="contact" id="contact">
+            <div class="main-text">
+                <h2 class="heading">Contact Me</h2>
+                <span>Where to contact me?</span>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-group">
+                        <input type="hidden" name="access_key" value="0338c775-9589-4a99-bc2b-78bf9976e423">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" id="image" name="image" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="send-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
